@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Container{
+  @apply w-full px-8;
+}
+
+.main{
+  height: 92vh;
+ @apply relative overflow-y-scroll 
+}
+
+.Sidebar{
+  @apply inline-block h-full w-[20%] fixed bottom-0 top-0 left-[-100%]
+}
+
+.Content{
+@apply w-full p-10 inline-block h-full
+}
+
+.Button{
+  @apply bg-purple font-bold text-white p-2 rounded-md text-center
 }
